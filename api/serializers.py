@@ -38,6 +38,8 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 # Catagory Serializer
 class CategorySerializer(serializers.ModelSerializer):
+    post_count = serializers.SerializerMethodField()
+
     class Meta:
         model = Category
         fields = ['id', 'name', 'slug',

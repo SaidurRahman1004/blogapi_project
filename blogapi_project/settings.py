@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     # Local apps
     'blog',
     'api',
+    'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [
